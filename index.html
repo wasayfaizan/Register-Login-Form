@@ -27,7 +27,7 @@
       <div class="myCard">
         <div class="row">
           <div class="col-md-6">
-            <div class="myLeftCtn">
+            <div class="leftSide">
               <form class="myForm text-center">
                 <header>Create new account</header>
                 <div class="form-group">
@@ -37,11 +37,9 @@
                     type="text"
                     placeholder="Username"
                     id="username"
+                    autocomplete="off"
                     required
                   />
-                  <div class="invalid-feedback">
-                    Please fill out this field.
-                  </div>
                 </div>
 
                 <div class="form-group">
@@ -51,16 +49,44 @@
                     class="myInput"
                     placeholder="Email"
                     id="email"
+                    autocomplete="off"
                     required
                   />
-                  <div class="invalid-feedback">
-                    Please fill out this field.
-                  </div>
                 </div>
+                <div class="form-group">
+                  <i class="fas fa-lock"></i>
+                  <input
+                    type="password"
+                    class="myInput"
+                    placeholder="Password"
+                    id="password"
+
+                    required
+                  />
+
+                  <div class="form-group">
+                    <label><input type="checkbox" name="check1" id="check1" required><small> I read and agree to Terms & Conditions</small>
+                    <div class="invalid-feedback">You must check the box.</div>
+                    </label>
+                  </div>
+
+                  <input type="submit" class="butt" value="CREATE ACCOUNT">
+
               </form>
             </div>
           </div>
         </div>
+
+          <div class="col-md-6">
+            <div class="rightSide">
+              <div class="box"><header>Hello World!</header>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolore eum natus vitae eius magni, veritatis, reiciendis dicta blanditiis repudiandae distinctio voluptatem quasi repellendus sequi nemo neque consequuntur. At, voluptatem quis.
+                </p>
+                <input type="button" class="buttOutput" value="Learn More">
+              </div>
+            </div>
+          </div>
+        
       </div>
     </div>
 
