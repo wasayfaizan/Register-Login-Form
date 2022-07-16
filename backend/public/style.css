@@ -140,3 +140,12 @@ body {
 .buttOutput:focus {
   outline: none;
 }
+
+.login {
+  margin: 10px;
+}
+
+.login h6 {
+  font-weight: 400;
+  font-size: 15px;
+}
