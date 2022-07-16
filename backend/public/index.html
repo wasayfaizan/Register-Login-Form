@@ -28,7 +28,7 @@
         <div class="row">
           <div class="col-md-6">
             <div class="leftSide">
-              <form class="myForm text-center">
+              <form class="myForm text-center" method="post" action="/register">
                 <header>Create new account</header>
                 <div class="form-group">
                   <i class="fas fa-user"></i>
@@ -37,6 +37,7 @@
                     type="text"
                     placeholder="Username"
                     id="username"
+                    name="username"
                     autocomplete="off"
                     required
                   />
@@ -50,7 +51,7 @@
                     placeholder="Email"
                     id="email"
                     autocomplete="off"
-                    
+                    name="email"
                     required
                   />
                 </div>
@@ -62,6 +63,7 @@
                     placeholder="Password"
                     id="password"
                     autocomplete="off"
+                    name="password"
                     required
                   />
 
