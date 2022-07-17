@@ -29,9 +29,33 @@ app.post("/register", async (req,res) => {
 
       const userRegistered =  await user.save();
       
+      res.redirect("login.html")
+      
+      
+      
+     
 
     } catch (error){
         res.status(400).send(error);
+    }
+})
+
+app.post("/login", async(req,res) => {
+    try {
+
+        const username = req.body.username;
+        const password = req.body.password;
+
+        const userName = await Register.findOne({username});
+        
+        if(userName.password === password){
+            res.send("login sucessful")
+        } else {
+            res.send("invalid login details")
+        }
+
+    } catch (error){
+        res.status(400).send("invalid login details")
     }
 })
 
