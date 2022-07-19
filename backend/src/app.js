@@ -31,11 +31,7 @@ app.post("/register", async (req,res) => {
       
       res.redirect("login.html")
       
-      
-      
-     
-
-    } catch (error){
+      } catch (error){
         res.status(400).send(error);
     }
 })
